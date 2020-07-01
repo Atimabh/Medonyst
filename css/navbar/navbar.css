@@ -1,0 +1,98 @@
+ /* The sidepanel menu */
+ 
+ .sidepanel {
+     height: 100vh;
+     /* Specify a height */
+     width: 0;
+     /* 0 width - change this with JavaScript */
+     position: fixed;
+     /* Stay in place */
+     z-index: 1000;
+     /* Stay on top */
+     top: 0;
+     left: 0;
+     background-color: #ffffff;
+     /* Black*/
+     overflow-x: hidden;
+     /* Disable horizontal scroll */
+     /* padding-top: 60px; */
+     /* Place content 60px from the top */
+     transition: 0.5s;
+     /* 0.5 second transition effect to slide in the sidepanel */
+ }
+ /* The sidepanel links */
+ 
+ .sidepanel a {
+     /* padding: 8px 8px 8px 32px; */
+     margin: 2rem 0.5rem;
+     text-decoration: none;
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: #707070;
+     display: block;
+     transition: 0.3s;
+ }
+ /* When you mouse over the navigation links, change their color */
+ 
+ .sidepanel a:hover {
+     color: #f1f1f1;
+ }
+ /* Position and style the close button (top right corner) */
+ 
+ .sidepanel .blue .closebtn {
+     position: absolute;
+     margin: 0 0 !important;
+     top: 0;
+     right: 1.5rem;
+     font-size: 36px;
+     color: #ffffff;
+ }
+ /* Style the button that is used to open the sidepanel */
+ 
+ .sidepanel .blue {
+     position: relative;
+     /* background-color: #2199be; */
+     background-image: url(../../images/bg.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     height: 10rem;
+ }
+ 
+ .sidepanel .blue h1 {
+     font-size: 2rem;
+     color: #ffffff;
+     position: absolute;
+     bottom: 0.5rem;
+     left: 0.5rem;
+ }
+ 
+ .openbtn {
+     font-size: 1.5rem;
+     cursor: pointer;
+     background-color: #33c3d8;
+     color: white;
+     padding: 10px 15px;
+     border: none;
+ }
+ 
+ .openbtn:hover {
+     background-color: #444;
+ }
+ 
+ .navbar {
+     background-color: #33c3d8;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+ 
+ .navbar h1 {
+     font-size: 1.5rem;
+     color: #ffffff;
+     margin: 0 auto;
+ }
+ 
+ .navbar .navLink {
+     margin-right: 0.8rem;
+ }

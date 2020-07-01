@@ -1,0 +1,93 @@
+@import '../main/main.scss';
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 95%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 16px;
+    border: solid 4px #c3eef4;
+    background-color: rgba(195, 238, 244, 0.36);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    .back {
+        margin: 0.5rem 0.5rem;
+        a {
+            font-family: SegoeUI;
+            font-size: 1rem;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.07;
+            letter-spacing: normal;
+            text-align: left;
+            color: #707070;
+        }
+    }
+    h1 {
+        margin: 0 auto;
+        font-family: OpenSans;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #626262;
+    }
+    .medInput {
+        width: 90%;
+        margin: 1rem auto;
+        margin-top: 4rem;
+        font-size: 1rem;
+        border: none;
+        border-bottom: solid 2px #626262;
+        background-color: rgba(195, 238, 244, 0);
+        outline: none;
+    }
+    p {
+        margin: 0 auto;
+        font-size: 1rem;
+        width: 90%;
+        font-weight: 600;
+        color: #626262;
+    }
+    .symptoms {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0.5rem 0.5rem;
+        button {
+            margin: 0.2rem 0.5rem;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.5rem 0.8rem;
+            border-radius: 1rem;
+            color: #ffffff;
+            outline: none;
+        }
+    }
+    .find {
+        text-align: center;
+        margin-top: 2rem;
+        button {
+            border: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #1cbed6;
+            padding: 0.5rem 1rem;
+            border-radius: 1.5rem;
+            outline: none;
+        }
+    }
+}
