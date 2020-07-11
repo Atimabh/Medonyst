@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonist</title>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/recommendation/recommendation2.css">
+</head>
+
+<body>
+
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h1>Menu</h1>
+        </div>
+        <a href="#">Medicines</a>
+        <a href="#">Reminders</a>
+        <a href="#">Records</a>
+        <a href="#">Doctors</a>
+        <a href="#">About Us</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <h1>MEDONIST</h1>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <!-- Navigation Buttons -->
+    <div class="appNav">
+        <div class="appNavBtn active medicine">
+            <img src="images/medicine.png" alt="">
+            <h1>Medicines</h1>
+            <p>Get medicine <br> substitutes</p>
+        </div>
+        <div class="appNavBtn reminder">
+            <img src="images/Reminder.png" alt="">
+            <h1>Reminders</h1>
+            <p>Set medicine <br> reminders</p>
+        </div>
+        <div class="appNavBtn record">
+            <img src="images/Record.png" alt="">
+            <h1>Records</h1>
+            <p>Upload your <br> medical records</p>
+        </div>
+    </div>
+
+    <!-- Recommendation Result -->
+    <div class="container">
+        <div class="back">
+            <a href="recommendation.html">
+                Back
+            </a>
+        </div>
+
+        <h1 id="title">Medicine Recommender</h1>
+
+        <div class="cards">
+            <div class="card1">
+                <!-- <div class="symptom">Fever</div> -->
+                <div class="medicine">
+                    <h1 id="med1">Dexmeac</h1>
+                    <h1 id="med2">Calciutisol</h1>
+                </div>
+                <!-- <div class="more">See More</div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

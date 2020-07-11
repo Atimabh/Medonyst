@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  font-size: 62.5%;
+}
+
+.appNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appNav .appNavBtn {
+  min-width: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.appNav .appNavBtn img {
+  width: 3rem;
+}
+
+.appNav .appNavBtn h1 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0.5rem;
+  color: #ffffff;
+}
+
+.appNav .appNavBtn p {
+  font-size: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #514f4f;
+}
+
+.appNav .reminder {
+  background-color: #f8c45b;
+}
+
+.appNav .record {
+  background-color: #80deea;
+}
+
+.active {
+  border: solid 4px #80deea !important;
+  background-color: #ffffff !important;
+}
+
+.active h1 {
+  color: #707070 !important;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  width: 95%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 16px;
+  border: solid 4px #c3eef4;
+  background-color: rgba(195, 238, 244, 0.36);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.container .back {
+  margin: 0.5rem 0.5rem;
+}
+
+.container .back a {
+  font-family: SegoeUI;
+  font-size: 1rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.07;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+
+.container h1 {
+  margin: 0 auto;
+  font-family: OpenSans;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: #626262;
+}
+
+.container .medInput {
+  width: 90%;
+  margin: 1rem auto;
+  margin-top: 4rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: solid 2px #626262;
+  background-color: rgba(195, 238, 244, 0);
+  outline: none;
+}
+
+.container p {
+  margin: 0 auto;
+  font-size: 1rem;
+  width: 90%;
+  font-weight: 600;
+  color: #626262;
+}
+
+.container .symptoms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0.5rem 0.5rem;
+}
+
+.container .symptoms button {
+  margin: 0.2rem 0.5rem;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  color: #ffffff;
+  outline: none;
+}
+
+.container .find {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container .find button {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1cbed6;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  outline: none;
+}
+/*# sourceMappingURL=recommendation.css.map */

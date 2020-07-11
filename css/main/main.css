@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  font-size: 62.5%;
+}
+
+.appNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appNav .appNavBtn {
+  min-width: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.appNav .appNavBtn img {
+  width: 3rem;
+}
+
+.appNav .appNavBtn h1 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0.5rem;
+  color: #ffffff;
+}
+
+.appNav .appNavBtn p {
+  font-size: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #514f4f;
+}
+
+.appNav .medicine {
+  background-color: #80deea;
+}
+
+.appNav .reminder {
+  background-color: #f8c45b;
+}
+
+.appNav .record {
+  background-color: #80deea;
+}
+
+.active {
+  border: solid 4px #80deea !important;
+  background-color: #ffffff !important;
+}
+
+.active h1 {
+  color: #707070 !important;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */

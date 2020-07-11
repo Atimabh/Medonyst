@@ -1,0 +1,165 @@
+ /* The sidepanel menu */
+ 
+ .sidepanel {
+     height: 100vh;
+     /* Specify a height */
+     width: 0;
+     /* 0 width - change this with JavaScript */
+     position: fixed;
+     /* Stay in place */
+     z-index: 1000;
+     /* Stay on top */
+     top: 0;
+     left: 0;
+     background-color: #ffffff;
+     /* Black*/
+     overflow-x: hidden;
+     /* Disable horizontal scroll */
+     /* padding-top: 60px; */
+     /* Place content 60px from the top */
+     transition: 0.5s;
+     /* 0.5 second transition effect to slide in the sidepanel */
+ }
+ /* The sidepanel links */
+ 
+ .sidepanel a {
+     /* padding: 8px 8px 8px 32px; */
+     margin: 2rem 1.5rem;
+     text-decoration: none;
+     font-size: 1.5rem;
+     font-weight: 600;
+     color: #707070;
+     display: block;
+     transition: 0.3s;
+ }
+ /* When you mouse over the navigation links, change their color */
+ 
+ .sidepanel a:hover {
+     color: #f1f1f1;
+ }
+ /* Position and style the close button (top right corner) */
+ 
+ .sidepanel .blue .closebtn {
+     position: absolute;
+     margin: 0 0 !important;
+     top: 0;
+     right: 1.5rem;
+     font-size: 36px;
+     color: #ffffff;
+ }
+ /* Style the button that is used to open the sidepanel */
+ 
+ .sidepanel .blue {
+     position: relative;
+     background-color: #33c3d8;
+     /* background-image: url(../../images/bg.png); */
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     height: 10rem;
+ }
+ 
+ .sidepanel .blue h1 {
+     font-size: 2rem;
+     color: #ffffff;
+     position: absolute;
+     bottom: 0.5rem;
+     left: 1.5rem;
+ }
+ 
+ .openbtn {
+     font-size: 1.5rem;
+     cursor: pointer;
+     background-color: #33c3d8;
+     color: white;
+     padding: 10px 15px;
+     border: none;
+     z-index: 1000;
+ }
+ 
+ .navbar {
+     background-color: #33c3d8;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+ 
+ .navbar #logo {
+     text-decoration: none;
+     font-size: 1rem;
+     color: #ffffff;
+     margin: 0 auto !important;
+ }
+ 
+ .navbar .navLink {
+     margin-right: 0.8rem;
+ }
+ 
+ .openbtn span {
+     display: block;
+     width: 33px;
+     height: 4px;
+     margin-bottom: 5px;
+     position: relative;
+     background: #ffffff;
+     border-radius: 3px;
+     z-index: 1;
+     transform-origin: 4px 0px;
+     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+ }
+ 
+ .openbtn span:first-child {
+     transform-origin: 0% 0%;
+ }
+ 
+ .openbtn span:nth-last-child(2) {
+     transform-origin: 0% 100%;
+ }
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ 
+ .openbtn input:checked~span {
+     opacity: 1;
+     transform: rotate(45deg) translate(0, -20px);
+ }
+ /*
+  * But let's hide the middle one.
+  */
+ 
+ .openbtn span:nth-last-child(2) {
+     width: 20px;
+ }
+ 
+ .openbtn input:checked~span:nth-last-child(3) {
+     opacity: 0;
+     transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ 
+ .openbtn input:checked~span:nth-last-child(2) {
+     width: 33px;
+     transform: rotate(-45deg) translate(0, 20px);
+ }
+ 
+ .openbtn input {
+     display: block;
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 0px;
+     left: 5px;
+     cursor: pointer;
+     opacity: 0;
+     /* hide this */
+     z-index: 1000;
+     /* and place it over the hamburger */
+     -webkit-touch-callout: none;
+ }
+ 
+ .sideActive {
+     width: 250px !important;
+ }
