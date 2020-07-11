@@ -40,6 +40,9 @@ body {
             color: #514f4f;
         }
     }
+    .medicine {
+        background-color: #80deea;
+    }
     .reminder {
         background-color: #f8c45b;
     }
@@ -54,4 +57,9 @@ body {
     h1 {
         color: #707070 !important;
     }
+}
+
+a {
+    text-decoration: none;
+    outline: none;
 }

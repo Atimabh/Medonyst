@@ -14,7 +14,6 @@
     <!-- Sidepanel -->
     <div id="mySidepanel" class="sidepanel">
         <div class="blue">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <h1>Menu</h1>
         </div>
         <a href="#">Medicines</a>
@@ -26,8 +25,15 @@
 
     <!-- Navbar -->
     <nav class="navbar">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <h1>MEDONIST</h1>
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONIST</h1>
+        </a>
         <a class="navLink" href="#">
             <img src="images/bell.svg" alt="">
         </a>
