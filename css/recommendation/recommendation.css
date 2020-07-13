@@ -64,6 +64,10 @@ body {
   color: #514f4f;
 }
 
+.appNav .medicine {
+  background-color: #80deea;
+}
+
 .appNav .reminder {
   background-color: #f8c45b;
 }
@@ -79,6 +83,11 @@ body {
 
 .active h1 {
   color: #707070 !important;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
 }
 
 body {
