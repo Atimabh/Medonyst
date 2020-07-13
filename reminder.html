@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonist</title>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/reminder/reminder.css">
+</head>
+
+<body>
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <h1>Menu</h1>
+        </div>
+        <a href="#">Medicines</a>
+        <a href="#">Reminders</a>
+        <a href="#">Records</a>
+        <a href="#">Doctors</a>
+        <a href="#">About Us</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">
+        <input id="ham" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONIST</h1>
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <!-- Navigation Buttons -->
+    <div class="appNav">
+        <a href="recommendation.html">
+            <div class="appNavBtn medicine">
+                <img src="images/medicine.png" alt="">
+                <h1>Medicines</h1>
+                <p>Get medicine <br> substitutes</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="appNavBtn reminder active">
+                <img src="images/Reminder.png" alt="">
+                <h1>Reminders</h1>
+                <p>Set medicine <br> reminders</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="appNavBtn record">
+                <img src="images/Record.png" alt="">
+                <h1>Records</h1>
+                <p>Upload your <br> medical records</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="back">
+            <a href="index.html">
+                <h1>Back</h1>
+            </a>
+        </div>
+        <div class="reminderWrappper">
+            <div class="reminder">
+                <div class="pills">
+                    <img src="images/pills.png" alt="">
+                </div>
+                <div class="meds">
+                    <div class="medTtileTime">
+                        <h1>Morning</h1>
+                        <img src="images/pencil.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

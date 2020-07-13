@@ -1,0 +1,30 @@
+@import '../main/main.scss';
+.container {
+    width: 90%;
+    margin: 0 auto;
+    .back {
+        a {
+            font-family: SegoeUI;
+            font-size: 0.5rem;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.07;
+            letter-spacing: normal;
+            text-align: left;
+            color: #707070;
+        }
+    }
+}
+
+.reminderWrappper {
+    display: flex;
+    flex-direction: column;
+    .reminder {
+        display: flex;
+        flex-direction: row;
+        .pills {
+            background-color: #fabc41;
+        }
+    }
+}
