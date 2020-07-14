@@ -125,9 +125,84 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px rgba(112, 112, 112, 0.09);
+  height: 100%;
+  border-radius: 0.5rem;
 }
 
 .reminderWrappper .reminder .pills {
+  margin: 0.8rem 0;
+  position: relative;
+  left: -1rem;
   background-color: #fabc41;
+  width: 12%;
+  border-radius: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reminderWrappper .reminder .pills img {
+  width: 80%;
+}
+
+.reminderWrappper .reminder .meds {
+  width: 85%;
+  margin: 1rem 0;
+}
+
+.reminderWrappper .reminder .meds .medTtileTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.reminderWrappper .reminder .meds .medTtileTime h1 {
+  text-transform: uppercase;
+  color: #707070;
+}
+
+.reminderWrappper .reminder .meds .medsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reminderWrappper .reminder .meds .medsWrapper .med {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reminderWrappper .reminder .meds .medsWrapper .med h1 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
 }
 /*# sourceMappingURL=reminder.css.map */
