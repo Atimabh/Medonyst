@@ -23,8 +23,51 @@
     .reminder {
         display: flex;
         flex-direction: row;
+        box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px rgba(112, 112, 112, 0.09);
+        height: 100%;
+        border-radius: 0.5rem;
         .pills {
+            margin: 0.8rem 0;
+            position: relative;
+            left: -1rem;
             background-color: #fabc41;
+            width: 12%;
+            border-radius: 0.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 80%;
+            }
+        }
+        .meds {
+            width: 85%;
+            margin: 1rem 0;
+            .medTtileTime {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+                h1 {
+                    text-transform: uppercase;
+                    color: #707070;
+                }
+                img {}
+            }
+            .medsWrapper {
+                display: flex;
+                flex-direction: column;
+                .med {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    h1 {
+                        font-size: 1rem;
+                        margin: 0.5rem 0;
+                    }
+                }
+            }
         }
     }
 }
