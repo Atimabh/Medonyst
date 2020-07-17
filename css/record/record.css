@@ -93,12 +93,15 @@ a {
 .container {
   width: 90%;
   margin: 0 auto;
+  background-color: #c3eef4;
+  border-radius: 0.5rem;
 }
 
 .container .back {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 0.4rem;
 }
 
 .container .back a {
@@ -113,124 +116,91 @@ a {
   color: #707070;
 }
 
-.reminderWrappper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.container .title {
+  width: 95%;
+  color: #626262;
+  margin: 0 auto;
 }
 
-.reminderWrappper .yellow .pills {
-  background-color: #fabc41;
-}
-
-.reminderWrappper .brown .pills {
-  background-color: #e4865c;
-}
-
-.reminderWrappper .blue .pills {
-  background-color: #1cbed6;
-}
-
-.reminderWrappper .reminder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.16);
-  border: solid 1px rgba(112, 112, 112, 0.09);
-  height: 100%;
-  border-radius: 0.5rem;
-  margin: 0.5rem auto;
-}
-
-.reminderWrappper .reminder .pills {
-  margin: 0.8rem 0;
-  position: relative;
-  left: -1rem;
-  width: 12%;
-  border-radius: 0.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.reminderWrappper .reminder .pills img {
-  width: 80%;
-}
-
-.reminderWrappper .reminder .meds {
-  width: 85%;
-  margin: 1rem 0;
-}
-
-.reminderWrappper .reminder .meds .medTtileTime {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
-
-.reminderWrappper .reminder .meds .medTtileTime h1 {
-  text-transform: uppercase;
-  color: #707070;
-}
-
-.reminderWrappper .reminder .meds .medsWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.reminderWrappper .reminder .meds .medsWrapper .med {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.reminderWrappper .reminder .meds .medsWrapper .med h1 {
-  font-family: SegoeUI;
-  font-size: 1rem;
+.container .title h1 {
   margin: 0.5rem 0;
 }
 
-.reminderWrappper .reminder .meds .medsWrapper .med #medName {
-  color: #707070;
-  font-weight: 600;
+.container .title p {
+  font-size: 1rem;
 }
 
-.strike {
-  text-decoration: line-through;
+.container .form {
+  width: 95%;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-/*# sourceMappingURL=reminder.css.map */
+
+.container .form input {
+  margin: 0.5rem auto;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  background-color: #EDFAFB;
+  color: #626262;
+  width: 95%;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.container .form textarea {
+  font-family: inherit;
+  font-weight: 600;
+  margin: 0.5rem auto;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  background-color: #EDFAFB;
+  color: #626262;
+  width: 95%;
+  height: 5rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.container .form .subForm {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .form .subForm input {
+  width: 45%;
+}
+
+.container .form #sex {
+  width: 42%;
+}
+
+.container .form button {
+  width: 40%;
+  margin: 1rem auto;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  background-color: #fabc41;
+  color: #fff;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+/*# sourceMappingURL=record.css.map */

@@ -155,7 +155,7 @@ a {
 }
 
 .reminderWrapper .reminder {
-  margin: 0.8rem 0;
+  margin: 0.8rem auto;
   border-radius: 0.5rem;
   position: relative;
   display: -webkit-box;

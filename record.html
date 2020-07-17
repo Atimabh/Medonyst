@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medonist</title>
     <link rel="stylesheet" href="css/navbar/navbar.css">
-    <link rel="stylesheet" href="css/recommendation/recommendation.css">
+    <link rel="stylesheet" href="css/record/record.css">
 </head>
 
 <body>
-
     <!-- Sidepanel -->
     <div id="mySidepanel" class="sidepanel">
         <div class="blue">
@@ -26,11 +25,11 @@
     <!-- Navbar -->
     <nav class="navbar">
         <button class="openbtn" onclick="openNav()">
-            <input id="ham" type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <input id="ham" type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
         <a href="index.html" id="logo">
             <h1>MEDONIST</h1>
         </a>
@@ -45,7 +44,7 @@
     <!-- Navigation Buttons -->
     <div class="appNav">
         <a href="recommendation.html">
-            <div class="appNavBtn medicine active">
+            <div class="appNavBtn medicine">
                 <img src="images/medicine.png" alt="">
                 <h1>Medicines</h1>
                 <p>Get medicine <br> substitutes</p>
@@ -59,7 +58,7 @@
             </div>
         </a>
         <a href="record.html">
-            <div class="appNavBtn record">
+            <div class="appNavBtn record active">
                 <img src="images/Record.png" alt="">
                 <h1>Records</h1>
                 <p>Upload your <br> medical records</p>
@@ -67,34 +66,36 @@
         </a>
     </div>
 
-    <!-- Medicine Input -->
+    <!-- Records Section -->
     <div class="container">
         <div class="back">
-            <a href="#">
-                Back
+            <a href="index.html">
+                <h1>Back</h1>
             </a>
         </div>
-
-        <h1>Medicine Recommender</h1>
-        <input class="medInput" type="text" placeholder="Enter upto 3 symptoms">
-        <p>Select from common symptoms you may have: (Optional)
-        </p>
-        <div class="symptoms">
-            <button style="background-color: #fabc41;" id="fever">Fever</button>
-            <button style="background-color: #e4865c" id="vomit">Vomiting</button>
-            <button style="background-color: #2199be;" id="rest">Restlessness</button>
-            <button style="background-color: #707070;" id="nausea">Nausea</button>
-            <button style="background-color: #fabc41;" id="nose">Runny Nose</button>
+        <div class="title">
+            <h1>Patient History</h1>
+            <p>Please enter your details for the following:
+            </p>
         </div>
-        <div class="find">
-            <a href="recommendation2.html">
-                <button>Find Medicine</button>
-            </a>
+        <div class="form">
+            <input type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="Patient ID" id="id">
+            <div class="subForm">
+                <input type="text" placeholder="Age (Eg. 21)" id="age">
+                <input type="text" placeholder="DD/MM/YY" id="dob">
+            </div>
+            <input type="text" placeholder="Sex (M/F)" id="sex">
+            <textarea name="symptom" id="symp" cols="30" rows="10" placeholder="Enter any symptoms"></textarea>
+            <textarea name="prescribed" id="pres" cols="30" rows="10" placeholder="Enter prescribed medications"></textarea>
+            <button id="save">Save Details</button>
         </div>
     </div>
 
+
+
+
     <script src="js/navbar.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
