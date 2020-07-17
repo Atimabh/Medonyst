@@ -3,6 +3,7 @@
     width: 90%;
     margin: 0 auto;
     .back {
+        width: fit-content;
         a {
             font-family: SegoeUI;
             font-size: 0.5rem;
@@ -20,6 +21,21 @@
 .reminderWrappper {
     display: flex;
     flex-direction: column;
+    .yellow {
+        .pills {
+            background-color: #fabc41;
+        }
+    }
+    .brown {
+        .pills {
+            background-color: #e4865c;
+        }
+    }
+    .blue {
+        .pills {
+            background-color: #1cbed6;
+        }
+    }
     .reminder {
         display: flex;
         flex-direction: row;
@@ -27,11 +43,11 @@
         border: solid 1px rgba(112, 112, 112, 0.09);
         height: 100%;
         border-radius: 0.5rem;
+        margin: 0.5rem auto;
         .pills {
             margin: 0.8rem 0;
             position: relative;
             left: -1rem;
-            background-color: #fabc41;
             width: 12%;
             border-radius: 0.2rem;
             display: flex;
@@ -63,11 +79,20 @@
                     flex-direction: row;
                     justify-content: space-between;
                     h1 {
+                        font-family: SegoeUI;
                         font-size: 1rem;
                         margin: 0.5rem 0;
+                    }
+                    #medName {
+                        color: #707070;
+                        font-weight: 600;
                     }
                 }
             }
         }
     }
+}
+
+.strike {
+    text-decoration: line-through;
 }

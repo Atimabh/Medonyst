@@ -14,7 +14,6 @@
     <!-- Sidepanel -->
     <div id="mySidepanel" class="sidepanel">
         <div class="blue">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <h1>Menu</h1>
         </div>
         <a href="#">Medicines</a>
@@ -26,8 +25,15 @@
 
     <!-- Navbar -->
     <nav class="navbar">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <h1>MEDONIST</h1>
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONIST</h1>
+        </a>
         <a class="navLink" href="#">
             <img src="images/bell.svg" alt="">
         </a>
@@ -38,21 +44,27 @@
 
     <!-- Navigation Buttons -->
     <div class="appNav">
-        <div class="appNavBtn active medicine">
-            <img src="images/medicine.png" alt="">
-            <h1>Medicines</h1>
-            <p>Get medicine <br> substitutes</p>
-        </div>
-        <div class="appNavBtn reminder">
-            <img src="images/Reminder.png" alt="">
-            <h1>Reminders</h1>
-            <p>Set medicine <br> reminders</p>
-        </div>
-        <div class="appNavBtn record">
-            <img src="images/Record.png" alt="">
-            <h1>Records</h1>
-            <p>Upload your <br> medical records</p>
-        </div>
+        <a href="recommendation.html">
+            <div class="appNavBtn medicine active">
+                <img src="images/medicine.png" alt="">
+                <h1>Medicines</h1>
+                <p>Get medicine <br> substitutes</p>
+            </div>
+        </a>
+        <a href="reminder.html">
+            <div class="appNavBtn reminder">
+                <img src="images/Reminder.png" alt="">
+                <h1>Reminders</h1>
+                <p>Set medicine <br> reminders</p>
+            </div>
+        </a>
+        <a href="record.html">
+            <div class="appNavBtn record">
+                <img src="images/Record.png" alt="">
+                <h1>Records</h1>
+                <p>Upload your <br> medical records</p>
+            </div>
+        </a>
     </div>
 
     <!-- Recommendation Result -->

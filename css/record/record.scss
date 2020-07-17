@@ -1,0 +1,88 @@
+@import '../main/main.scss';
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #c3eef4;
+    border-radius: 0.5rem;
+    .back {
+        width: fit-content;
+        margin: 0 0.4rem;
+        a {
+            font-family: SegoeUI;
+            font-size: 0.5rem;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.07;
+            letter-spacing: normal;
+            text-align: left;
+            color: #707070;
+        }
+    }
+    .title {
+        width: 95%;
+        color: #626262;
+        margin: 0 auto;
+        h1 {
+            margin: 0.5rem 0;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .form {
+        width: 95%;
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        input {
+            margin: 0.5rem auto;
+            padding: 0.4rem 0.8rem;
+            font-size: 1rem;
+            background-color: #EDFAFB;
+            color: #626262;
+            width: 95%;
+            border: none;
+            border-radius: 1rem;
+            outline: none;
+        }
+        textarea {
+            font-family: inherit;
+            font-weight: 600;
+            margin: 0.5rem auto;
+            padding: 0.4rem 0.8rem;
+            font-size: 1rem;
+            background-color: #EDFAFB;
+            color: #626262;
+            width: 95%;
+            height: 5rem;
+            border: none;
+            border-radius: 1rem;
+            outline: none;
+        }
+        .subForm {
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            input {
+                width: 45%;
+            }
+        }
+        #sex {
+            width: 42%;
+        }
+        button {
+            width: 40%;
+            margin: 1rem auto;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            background-color: #fabc41;
+            color: #fff;
+            border-radius: 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+}
