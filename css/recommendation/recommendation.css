@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 62.5%;
 }
 
@@ -101,6 +101,34 @@ body {
           flex-direction: column;
 }
 
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+::-moz-placeholder {
+  color: #ffffff;
+}
+
+::-ms-placeholder {
+  color: #ffffff;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
 .container {
   width: 95%;
   min-height: 100%;
@@ -148,25 +176,33 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: #626262;
+  margin-bottom: 1rem;
 }
 
-.container .medInput {
+.container .sympInput {
   width: 90%;
   margin: 1rem auto;
-  margin-top: 4rem;
   font-size: 1rem;
   border: none;
-  border-bottom: solid 2px #626262;
-  background-color: rgba(195, 238, 244, 0);
+  border-radius: 1rem;
+  background-color: rgba(0, 61, 71, 0.7);
+  color: #ffffff !important;
   outline: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
 }
 
 .container p {
-  margin: 0 auto;
+  margin: 1rem auto;
   font-size: 1rem;
   width: 90%;
   font-weight: 600;
   color: #626262;
+}
+
+.container #disc {
+  width: 95%;
+  text-align: left;
 }
 
 .container .symptoms {

@@ -163,3 +163,10 @@
  .sideActive {
      width: 250px !important;
  }
+ 
+ @media (min-width: 900px) {
+     body {
+         margin: 0 auto;
+         width: 30vw;
+     }
+ }

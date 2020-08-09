@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medonist</title>
+    <title>Medonyst</title>
     <link rel="stylesheet" href="css/navbar/navbar.css">
     <link rel="stylesheet" href="css/recommendation/recommendation.css">
 </head>
@@ -16,10 +16,11 @@
         <div class="blue">
             <h1>Menu</h1>
         </div>
-        <a href="#">Medicines</a>
-        <a href="#">Reminders</a>
-        <a href="#">Records</a>
-        <a href="#">Doctors</a>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <a href="doctor.html">Doctors</a>
         <a href="#">About Us</a>
     </div>
 
@@ -32,7 +33,7 @@
             <span></span>
         </button>
         <a href="index.html" id="logo">
-            <h1>MEDONIST</h1>
+            <h1>MEDONYST</h1>
         </a>
         <a class="navLink" href="#">
             <img src="images/bell.svg" alt="">
@@ -76,7 +77,9 @@
         </div>
 
         <h1>Medicine Recommender</h1>
-        <input class="medInput" type="text" placeholder="Enter upto 3 symptoms">
+        <input class="sympInput" id="symp1" type="text" placeholder="Enter symptom 1">
+        <input class="sympInput" id="symp2" type="text" placeholder="Enter symptom 2">
+        <input class="sympInput" id="symp3" type="text" placeholder="Enter symptom 3">
         <p>Select from common symptoms you may have: (Optional)
         </p>
         <div class="symptoms">
@@ -91,6 +94,7 @@
                 <button>Find Medicine</button>
             </a>
         </div>
+        <p id="disc">* Please note that the medicines shown to you are on basis of the symptoms entered by you. <br> The application does not take responsibility for any misdiagnosis. In case of confusion, please contact our in-house doctors.</p>
     </div>
 
     <script src="js/navbar.js"></script>

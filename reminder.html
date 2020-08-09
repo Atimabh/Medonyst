@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medonist</title>
+    <title>Medonyst</title>
     <link rel="stylesheet" href="css/navbar/navbar.css">
     <link rel="stylesheet" href="css/reminder/reminder.css">
+    <link rel="stylesheet" href="css/reminder/modal.css">
 </head>
 
 <body>
@@ -15,23 +16,24 @@
         <div class="blue">
             <h1>Menu</h1>
         </div>
-        <a href="#">Medicines</a>
-        <a href="#">Reminders</a>
-        <a href="#">Records</a>
-        <a href="#">Doctors</a>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <a href="doctor.html">Doctors</a>
         <a href="#">About Us</a>
     </div>
 
     <!-- Navbar -->
     <nav class="navbar">
         <button class="openbtn" onclick="openNav()">
-        <input id="ham" type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <a href="index.html" id="logo">
-            <h1>MEDONIST</h1>
+            <h1>MEDONYST</h1>
         </a>
         <a class="navLink" href="#">
             <img src="images/bell.svg" alt="">
@@ -71,6 +73,9 @@
             <a href="index.html">
                 <h1>Back</h1>
             </a>
+        </div>
+        <div class="addRemBtn">
+            <button id="myBtn">+ ADD REMINDER</button>
         </div>
         <div class="reminderWrappper">
             <div class="reminder yellow">
@@ -152,8 +157,46 @@
     </div>
 
 
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>New Reminder</h2>
+            </div>
+            <div class="modalTimeWrapper">
+                <div class="modalTime" id="modalmorning">
+                    <h1>
+                        MORNING
+                    </h1>
+                </div>
+                <div class="modalTime" id="modalafternoon">
+                    <h1>
+                        AFTERNOON
+                    </h1>
+                </div>
+                <div class="modalTime" id="modalevening">
+                    <h1>
+                        EVENING
+                    </h1>
+                </div>
+            </div>
+            <input class="sympInput" id="symp1" type="text" placeholder="Name of Medicine">
+            <input class="sympInput" id="symp2" type="text" placeholder="Dosage">
+            <input class="sympInput" id="symp3" type="text" placeholder="Reminder Time">
+            <div class="custom-select" style="width:200px;">
+                <select>
+                    <option value="0">Reminder Frequency</option>
+                    <option value="1">Everyday</option>
+                    <option value="2">Alternate Day</option>
+                </select>
+            </div>
+            <button id="modalAdd">Add Reminder</button>
+        </div>
+    </div>
 
     <script src="js/navbar.js"></script>
+    <script src="js/reminder.js"></script>
 </body>
 
 </html>
