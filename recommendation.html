@@ -7,6 +7,7 @@
     <title>Medonyst</title>
     <link rel="stylesheet" href="css/navbar/navbar.css">
     <link rel="stylesheet" href="css/recommendation/recommendation.css">
+    <link rel="stylesheet" href="css/autocomplete.css">
 </head>
 
 <body>
@@ -77,9 +78,12 @@
         </div>
 
         <h1>Medicine Recommender</h1>
+
         <input class="sympInput" id="symp1" type="text" placeholder="Enter symptom 1">
         <input class="sympInput" id="symp2" type="text" placeholder="Enter symptom 2">
         <input class="sympInput" id="symp3" type="text" placeholder="Enter symptom 3">
+
+
         <p>Select from common symptoms you may have: (Optional)
         </p>
         <div class="symptoms">
@@ -88,15 +92,24 @@
             <button style="background-color: #2199be;" id="rest">Restlessness</button>
             <button style="background-color: #707070;" id="nausea">Nausea</button>
             <button style="background-color: #fabc41;" id="nose">Runny Nose</button>
+            <button style="background-color: #e4865c;" id="cough">Cough</button>
+            <button style="background-color: #2199be;" id="headache">Headache</button>
+            <button style="background-color: #707070;" id="birth">Birth Control</button>
+            <button style="background-color: #2199be;" id="insomnia">Insomnia</button>
+            <button style="background-color: #fabc41;" id="conjuctivitis">Conjunctivitis</button>
+            <button style="background-color: #e4865c;" id="migrane">Migraine</button>
+            <button style="background-color: #707070;" id="acne">Acne</button>
         </div>
         <div class="find">
             <a href="recommendation2.html">
                 <button>Find Medicine</button>
             </a>
         </div>
-        <p id="disc">* Please note that the medicines shown to you are on basis of the symptoms entered by you. <br> The application does not take responsibility for any misdiagnosis. In case of confusion, please contact our in-house doctors.</p>
+        <p id="disc">* Please note that the medicines shown to you are on basis of the symptoms entered by you. <br> The application does not take responsibility for any misdiagnosis. In case of confusion, please contact our in-house doctors.
+        </p>
     </div>
 
+    <script src="js/autocomplete.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/script.js"></script>
 </body>

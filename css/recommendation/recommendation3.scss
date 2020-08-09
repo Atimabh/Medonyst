@@ -55,39 +55,27 @@ body {
             color: #ffffff;
             text-align: center;
             box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.16);
-            .medicineWrapper {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                .medicine {
-                    font-size: 0.8rem;
-                    width: fit-content;
-                    text-align: left;
-                    h1 {
-                        font-size: 1.2rem;
-                        margin: 0.8rem 0;
-                        margin-left: 1rem;
+            .medicine {
+                font-size: 0.8rem;
+                width: fit-content;
+                margin-left: 1rem;
+                text-align: left;
+                h1 {
+                    font-size: 1.2rem;
+                    margin: 0.8rem 0;
+                }
+                ul {
+                    list-style: none;
+                    font-size: 1rem;
+                    li {
+                        margin: 1rem 0;
+                        font-weight: 600;
                     }
-                    ul {
-                        list-style: none;
-                        font-size: 1rem;
-                        li {
-                            margin: 1rem 0;
-                            font-weight: 600;
-                        }
-                    }
-                    P {
-                        width: 95%;
-                        font-size: 1rem;
-                        margin: 2rem auto;
-                    }
-                    #recTitle {
-                        font-size: 1rem;
-                        text-align: center;
-                        color: #666;
-                        font-weight: 900;
-                        margin-left: 0;
-                    }
+                }
+                P {
+                    width: 95%;
+                    font-size: 1rem;
+                    margin: 2rem auto;
                 }
             }
             .sympName {

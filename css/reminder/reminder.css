@@ -211,6 +211,10 @@ a {
   color: #707070;
 }
 
+.reminderWrappper .reminder .meds .medTtileTime .fas {
+  font-size: 1rem;
+}
+
 .reminderWrappper .reminder .meds .medsWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
