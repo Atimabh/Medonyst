@@ -193,3 +193,72 @@ document.getElementById("acne").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Acne";
   }
 });
+
+$(function () {
+  var availableTags = [
+    "Cough",
+    "Headache",
+    "Birth Control",
+    "Insomnia",
+    "Anxiety",
+    "Conjunctivitis",
+    "Migraine Prevention",
+    "Motion Sickness",
+    "Acne",
+    "Nasal Congestion",
+    "Menstrual",
+    "Disorders",
+    "Constipation",
+    "Sinusitis",
+    "Nausea/Vomiting",
+  ];
+  $("#symp1").autocomplete({
+    source: availableTags,
+  });
+});
+
+$(function () {
+  var availableTags = [
+    "Cough",
+    "Headache",
+    "Birth Control",
+    "Insomnia",
+    "Anxiety",
+    "Conjunctivitis",
+    "Migraine Prevention",
+    "Motion Sickness",
+    "Acne",
+    "Nasal Congestion",
+    "Menstrual",
+    "Disorders",
+    "Constipation",
+    "Sinusitis",
+    "Nausea/Vomiting",
+  ];
+  $("#symp2").autocomplete({
+    source: availableTags,
+  });
+});
+
+$(function () {
+  var availableTags = [
+    "Cough",
+    "Headache",
+    "Birth Control",
+    "Insomnia",
+    "Anxiety",
+    "Conjunctivitis",
+    "Migraine Prevention",
+    "Motion Sickness",
+    "Acne",
+    "Nasal Congestion",
+    "Menstrual",
+    "Disorders",
+    "Constipation",
+    "Sinusitis",
+    "Nausea/Vomiting",
+  ];
+  $("#symp3").autocomplete({
+    source: availableTags,
+  });
+});
