@@ -60,6 +60,8 @@ body {
                 width: fit-content;
                 margin-left: 1rem;
                 text-align: left;
+                display: flex;
+                flex-direction: row;
                 h1 {
                     font-size: 1.2rem;
                     margin: 0.8rem 0;
@@ -71,12 +73,16 @@ body {
                         margin: 1rem 0;
                         font-weight: 600;
                     }
+                    .listTitle {
+                        color: #666666;
+                        font-weight: bolder;
+                    }
                 }
-                P {
-                    width: 95%;
-                    font-size: 1rem;
-                    margin: 2rem auto;
-                }
+            }
+            #note {
+                width: 95%;
+                font-size: 1rem;
+                margin: 2rem auto;
             }
             .sympName {
                 width: 100%;
