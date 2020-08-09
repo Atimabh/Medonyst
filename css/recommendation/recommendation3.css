@@ -180,6 +180,13 @@ body {
   width: fit-content;
   margin-left: 1rem;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .container .cards .cardChild .medicine h1 {
@@ -197,7 +204,12 @@ body {
   font-weight: 600;
 }
 
-.container .cards .cardChild .medicine P {
+.container .cards .cardChild .medicine ul .listTitle {
+  color: #666666;
+  font-weight: bolder;
+}
+
+.container .cards .cardChild #note {
   width: 95%;
   font-size: 1rem;
   margin: 2rem auto;
