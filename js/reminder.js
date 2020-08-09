@@ -109,3 +109,13 @@ document.getElementById("modalevening").addEventListener("click", () => {
 document.getElementById("modalAdd").addEventListener("click", () => {
   modal.style.display = "none";
 });
+
+document.getElementById("eveningClose").addEventListener("click", () => {
+  document.querySelector(".blue-close").style.display = "none";
+});
+document.getElementById("morningClose").addEventListener("click", () => {
+  document.querySelector(".yellow").style.display = "none";
+});
+document.getElementById("afternoonClose").addEventListener("click", () => {
+  document.querySelector(".brown").style.display = "none";
+});

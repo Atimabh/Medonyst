@@ -173,55 +173,34 @@ body {
           box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.16);
 }
 
-.container .cards .cardChild .medicineWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.container .cards .cardChild .medicineWrapper .medicine {
+.container .cards .cardChild .medicine {
   font-size: 0.8rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: 1rem;
   text-align: left;
 }
 
-.container .cards .cardChild .medicineWrapper .medicine h1 {
+.container .cards .cardChild .medicine h1 {
   font-size: 1.2rem;
   margin: 0.8rem 0;
-  margin-left: 1rem;
 }
 
-.container .cards .cardChild .medicineWrapper .medicine ul {
+.container .cards .cardChild .medicine ul {
   list-style: none;
   font-size: 1rem;
 }
 
-.container .cards .cardChild .medicineWrapper .medicine ul li {
+.container .cards .cardChild .medicine ul li {
   margin: 1rem 0;
   font-weight: 600;
 }
 
-.container .cards .cardChild .medicineWrapper .medicine P {
+.container .cards .cardChild .medicine P {
   width: 95%;
   font-size: 1rem;
   margin: 2rem auto;
-}
-
-.container .cards .cardChild .medicineWrapper .medicine #recTitle {
-  font-size: 1rem;
-  text-align: center;
-  color: #666;
-  font-weight: 900;
-  margin-left: 0;
 }
 
 .container .cards .cardChild .sympName {
@@ -265,4 +244,4 @@ body {
   margin-top: 2rem;
   font-size: 1rem;
 }
-/*# sourceMappingURL=recommendation2.css.map */
+/*# sourceMappingURL=recommendation3.css.map */
