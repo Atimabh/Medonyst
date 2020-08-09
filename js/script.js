@@ -1,31 +1,16 @@
-var inputText = [];
 //recommendation input
-document.getElementById('fever').addEventListener('click', () => {
-    inputText.push('Fever');
-    console.log(inputText);
-    inputPrint();
+document.getElementById("fever").addEventListener("click", () => {
+  document.querySelector("#symp1").value = "Fever";
 });
-document.getElementById('vomit').addEventListener('click', () => {
-    inputText.push('Vomiting');
-    console.log(inputText);
-    inputPrint();
+document.getElementById("vomit").addEventListener("click", () => {
+  document.querySelector("#symp2").value = "Vomit";
 });
-document.getElementById('rest').addEventListener('click', () => {
-    inputText.push('Restlessness');
-    console.log(inputText);
-    inputPrint();
+document.getElementById("rest").addEventListener("click", () => {
+  document.querySelector("#symp3").value = "Restlessness";
 });
-document.getElementById('nausea').addEventListener('click', () => {
-    inputText.push('Nausea');
-    console.log(inputText);
-    inputPrint();
+document.getElementById("nausea").addEventListener("click", () => {
+  document.querySelector("#symp3").value = "Nausea";
 });
-document.getElementById('nose').addEventListener('click', () => {
-    inputText.push('Runny Nose');
-    console.log(inputText);
-    inputPrint();
+document.getElementById("nose").addEventListener("click", () => {
+  document.querySelector("#symp3").value = "Runny Nose";
 });
-
-var inputPrint = () => {
-    document.querySelector('.medInput').value = inputText;
-};

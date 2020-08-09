@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 62.5%;
 }
 
@@ -162,24 +162,86 @@ body {
   margin: 0.5rem auto;
 }
 
-.container .cards .card1 {
+.container .cards .cardChild {
+  margin: 1rem 0;
   text-align: left;
   border-radius: 1rem;
   background-color: #73c4d6;
   color: #ffffff;
+  text-align: center;
   -webkit-box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.16);
 }
 
-.container .cards .card1 .medicine {
+.container .cards .cardChild .medicine {
   font-size: 0.8rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 1rem auto;
+  margin-left: 1rem;
+  text-align: left;
 }
 
-.container .cards .card1 .medicine h1 {
+.container .cards .cardChild .medicine h1 {
+  font-size: 1.2rem;
   margin: 0.8rem 0;
+}
+
+.container .cards .cardChild .medicine ul {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.container .cards .cardChild .medicine ul li {
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.container .cards .cardChild .medicine P {
+  width: 95%;
+  font-size: 1rem;
+  margin: 2rem auto;
+}
+
+.container .cards .cardChild .sympName {
+  width: 100%;
+  background-color: #2199be;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.5rem 0;
+}
+
+.container .cards .cardChild .sympName h1 {
+  font-size: 1.5rem;
+}
+
+.container .cards .cardChild .seemore {
+  border: none;
+  font-size: 1rem;
+  background-color: #2199be;
+  color: #ffffff;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.container .cards .cardChild #addreminder {
+  display: block;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.container .disc {
+  width: 98%;
+  margin: 1rem auto;
+  margin-top: 2rem;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=recommendation2.css.map */

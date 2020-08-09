@@ -1,0 +1,84 @@
+.doctorContainer {
+  width: 95%;
+  margin: 1rem auto;
+}
+
+.doctorContainer .back {
+  margin-top: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.doctorContainer .back a {
+  text-decoration: none;
+  color: #626262;
+}
+
+.doctorContainer .back a h1 {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.doctorContainer .doctorWrapper {
+  margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.doctorContainer .doctorWrapper .doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.doctorContainer .doctorWrapper .doc .docImg img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  border: 5px solid #33c3d8;
+}
+
+.doctorContainer .doctorWrapper .doc .docText h1 {
+  font-size: 0.8rem;
+}
+
+.doctorContainer .doctorAbout {
+  font-size: 1rem;
+}
+
+.doctorContainer .doctorAbout .info {
+  font-weight: 600;
+}
+
+.doctorContainer .doctorAbout .contact {
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.doctorContainer .doctorAbout .number {
+  text-align: center;
+  color: #2199be;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=doctor.css.map */

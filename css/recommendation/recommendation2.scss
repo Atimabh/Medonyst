@@ -1,4 +1,4 @@
-@import '../main/main.scss';
+@import "../main/main.scss";
 body {
     min-height: 100vh;
     display: flex;
@@ -47,20 +47,74 @@ body {
         flex-direction: column;
         width: 95%;
         margin: 0.5rem auto;
-        .card1 {
+        .cardChild {
+            margin: 1rem 0;
             text-align: left;
             border-radius: 1rem;
             background-color: #73c4d6;
             color: #ffffff;
+            text-align: center;
             box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.16);
             .medicine {
                 font-size: 0.8rem;
                 width: fit-content;
-                margin: 1rem auto;
+                margin-left: 1rem;
+                text-align: left;
                 h1 {
+                    font-size: 1.2rem;
                     margin: 0.8rem 0;
                 }
+                ul {
+                    list-style: none;
+                    font-size: 1rem;
+                    li {
+                        margin: 1rem 0;
+                        font-weight: 600;
+                    }
+                }
+                P {
+                    width: 95%;
+                    font-size: 1rem;
+                    margin: 2rem auto;
+                }
+            }
+            .sympName {
+                width: 100%;
+                background-color: #2199be;
+                text-align: center;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                padding: 0.5rem 0;
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+            .seemore {
+                border: none;
+                font-size: 1rem;
+                background-color: #2199be;
+                color: #ffffff;
+                padding: 0.5rem 0.8rem;
+                margin-bottom: 1rem;
+                border-radius: 1rem;
+                font-weight: 600;
+                outline: none;
+                cursor: pointer;
+            }
+            #addreminder {
+                display: block;
+                font-size: 1rem;
+                color: #ffffff;
+                text-decoration: underline;
+                margin-bottom: 1rem;
+                font-weight: 600;
             }
         }
+    }
+    .disc {
+        width: 98%;
+        margin: 1rem auto;
+        margin-top: 2rem;
+        font-size: 1rem;
     }
 }

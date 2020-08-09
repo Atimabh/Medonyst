@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medonyst</title>
     <link rel="stylesheet" href="css/navbar/navbar.css">
-    <link rel="stylesheet" href="css/record/record.css">
+    <link rel="stylesheet" href="css/recommendation/recommendation2.css">
 </head>
 
 <body>
+
     <!-- Sidepanel -->
     <div id="mySidepanel" class="sidepanel">
         <div class="blue">
@@ -45,7 +46,7 @@
     <!-- Navigation Buttons -->
     <div class="appNav">
         <a href="recommendation.html">
-            <div class="appNavBtn medicine">
+            <div class="appNavBtn medicine active">
                 <img src="images/medicine.png" alt="">
                 <h1>Medicines</h1>
                 <p>Get medicine <br> substitutes</p>
@@ -59,7 +60,7 @@
             </div>
         </a>
         <a href="record.html">
-            <div class="appNavBtn record active">
+            <div class="appNavBtn record">
                 <img src="images/Record.png" alt="">
                 <h1>Records</h1>
                 <p>Upload your <br> medical records</p>
@@ -67,33 +68,42 @@
         </a>
     </div>
 
-    <!-- Records Section -->
+    <!-- Recommendation Result -->
     <div class="container">
         <div class="back">
-            <a href="index.html">
-                <h1>Back</h1>
+            <a href="recommendation2.html">
+                Back
             </a>
         </div>
-        <div class="title">
-            <h1>Patient History</h1>
-            <p>Please enter your details for the following:
-            </p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Name" id="name">
-            <input type="text" placeholder="Patient ID" id="id">
-            <div class="subForm">
-                <input type="text" placeholder="Age (Eg. 21)" id="age">
-                <input type="text" placeholder="DD/MM/YY" id="dob">
+
+        <h1 id="title">Medicine Recommender</h1>
+
+        <div class="cards">
+            <div class="cardChild">
+                <div class="sympName">
+                    <h1>Corona</h1>
+                </div>
+                <div class="medicine">
+                    <ul>
+                        <li>Xenarelin</li>
+                        <li>Acetaposide</li>
+                        <li>Neonized</li>
+                        <li>Pitoramine</li>
+                        <li>Gemmara</li>
+                        <li>Abasonide</li>
+                        <li>Fenosys Fexovital</li>
+                        <li>Acycvax Lorazephilius</li>
+                    </ul>
+                    <p>NOTE: These medicines are alternative to the medicines showcased in the previous page and are recommended in order of patients' satisfaction with respect to using them.</p>
+                </div>
+                <a id="addreminder" href="reminder.html">Add Reminder</a>
+                <a href="recommendation2.html">
+                    <button class="seemore">Go Back</button>
+                </a>
             </div>
-            <input type="text" placeholder="Sex (M/F)" id="sex">
-            <textarea name="symptom" id="symp" cols="30" rows="10" placeholder="Enter any symptoms"></textarea>
-            <textarea name="prescribed" id="pres" cols="30" rows="10" placeholder="Enter prescribed medications"></textarea>
-            <button id="save">Save Details</button>
+
         </div>
     </div>
-
-
 
 
     <script src="js/navbar.js"></script>
