@@ -50,6 +50,7 @@
                 border: none;
                 font-size: 1rem;
                 outline: none;
+                padding-left: 1rem;
             }
             button {
                 border: none;
@@ -73,9 +74,11 @@
                 border: none;
                 font-size: 1rem;
                 outline: none;
+                padding-left: 1rem;
+                resize: none;
             }
-            .big {
-                height: 10rem;
+            #blood {
+                width: 8rem;
             }
         }
     }
