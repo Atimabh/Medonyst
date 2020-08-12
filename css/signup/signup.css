@@ -75,6 +75,7 @@
   border: none;
   font-size: 1rem;
   outline: none;
+  padding-left: 1rem;
 }
 
 .loginContainer .fullsignup form button {
@@ -101,10 +102,12 @@
   border: none;
   font-size: 1rem;
   outline: none;
+  padding-left: 1rem;
+  resize: none;
 }
 
-.loginContainer .fullsignup form .big {
-  height: 10rem;
+.loginContainer .fullsignup form #blood {
+  width: 8rem;
 }
 
 .loginContainer hr {
