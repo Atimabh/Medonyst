@@ -6,6 +6,7 @@
     border-radius: 1rem;
     #loginTitle {
         margin: 1rem 1rem;
+        margin-top: 3rem;
         color: #ffffff;
         font-size: 600;
     }
@@ -43,7 +44,7 @@
                 margin-bottom: 0.8rem;
             }
             input {
-                width: 80%;
+                width: 90%;
                 margin: 0.6rem auto;
                 padding: 0.6rem 0.5rem;
                 border-radius: 1rem;
@@ -63,6 +64,7 @@
                 font-size: 1.2rem;
                 font-weight: 600;
                 background-color: #fabc41;
+                margin-bottom: 2rem;
             }
             textarea {
                 font-family: sans-serif;
@@ -76,9 +78,6 @@
                 outline: none;
                 padding-left: 1rem;
                 resize: none;
-            }
-            #blood {
-                width: 8rem;
             }
         }
     }
