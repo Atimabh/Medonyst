@@ -7,7 +7,7 @@
     <title>Medonyst</title>
     <link rel="stylesheet" href="css/navbar/navbar.css">
     <link rel="stylesheet" href="css/index/index.css">
-    <link rel="stylesheet" href="css/login/login.css">
+    <link rel="stylesheet" href="css/signup/signup.css">
 </head>
 
 <body>
@@ -45,21 +45,24 @@
     </nav>
 
     <div class="loginContainer">
-        <h1 id="loginTitle">Log In</h1>
-        <div class="login">
-            <form action="#">
-                <input type="text" placeholder="Username" name="uname" required>
-                <input type="password" placeholder="Password" name="psw" required>
-                <button type="submit">Log In</button>
-            </form>
-        </div>
-        <hr>
         <h1 id="loginTitle">Sign Up</h1>
-        <div class="signup">
+        <div class="fullsignup">
             <form action="#">
-                <input type="text" placeholder="Email" name="uname" required>
-                <input type="password" placeholder="Password" name="psw" required>
-                <input type="password" placeholder="Confirm Password" name="psw" required>
+                <h1>User Details</h1>
+                <p>Please enter your details for the <br> following:
+                </p>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Username" name="uname" required>
+                <div class="age">
+                    <input type="text" placeholder="Age" name="uname" required>
+                    <input type="text" placeholder="DD/MM/YY" name="uname" required>
+                </div>
+                <div class="sex">
+                    <input type="text" placeholder="Sex (M/F)" name="uname" required>
+                    <input type="text" placeholder="Weight" name="uname" required>
+                </div>
+                <textarea name="all" id="allergies" cols="30" rows="10" placeholder="Enter any allergies"></textarea>
+                <textarea name="meds" id="meds" cols="30" rows="10" placeholder="Enter prescribed medication"></textarea>
                 <button type="submit">Sign Up</button>
             </form>
         </div>
