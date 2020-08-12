@@ -1,0 +1,115 @@
+.loginContainer {
+  width: 95%;
+  margin: 2rem auto;
+  background-color: #007383;
+  border: 5px solid #c3eef4;
+  border-radius: 1rem;
+}
+
+.loginContainer #loginTitle {
+  margin: 1rem 1rem;
+  color: #ffffff;
+  font-size: 600;
+}
+
+.loginContainer .fullsignup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #c3eef4;
+  width: 95%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+.loginContainer .fullsignup form .age {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.loginContainer .fullsignup form .age input {
+  width: 40%;
+}
+
+.loginContainer .fullsignup form .sex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.loginContainer .fullsignup form .sex input {
+  width: 40%;
+}
+
+.loginContainer .fullsignup form h1 {
+  margin: 1rem 1rem;
+  margin-bottom: 0.8rem;
+  color: #626262;
+}
+
+.loginContainer .fullsignup form p {
+  font-size: 0.8rem;
+  color: #626262;
+  margin: 0 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.loginContainer .fullsignup form input {
+  width: 80%;
+  margin: 0.6rem auto;
+  padding: 0.6rem 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.loginContainer .fullsignup form button {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0.6rem auto;
+  width: 8rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #fabc41;
+}
+
+.loginContainer .fullsignup form textarea {
+  font-family: sans-serif;
+  width: 90%;
+  height: 5rem;
+  margin: 0.6rem auto;
+  padding: 0.6rem 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.loginContainer .fullsignup form .big {
+  height: 10rem;
+}
+
+.loginContainer hr {
+  color: #ffffff;
+  width: 90%;
+  margin: 2rem auto;
+}
+/*# sourceMappingURL=signup.css.map */
