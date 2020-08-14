@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  font-size: 62.5%;
+}
+
+.appNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appNav .appNavBtn {
+  min-width: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.appNav .appNavBtn img {
+  width: 3rem;
+}
+
+.appNav .appNavBtn h1 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0.5rem;
+  color: #ffffff;
+}
+
+.appNav .appNavBtn p {
+  font-size: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #514f4f;
+}
+
+.appNav .medicine {
+  background-color: #80deea;
+}
+
+.appNav .reminder {
+  background-color: #f8c45b;
+}
+
+.appNav .record {
+  background-color: #80deea;
+}
+
+.active {
+  border: solid 4px #80deea !important;
+  background-color: #ffffff !important;
+}
+
+.active h1 {
+  color: #707070 !important;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.aboutContainer {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.aboutContainer .back {
+  margin: 1rem 0.5rem;
+  margin-top: 3rem;
+  width: 100%;
+  text-align: left;
+}
+
+.aboutContainer .back a {
+  font-size: 1rem;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #626262;
+}
+
+.aboutContainer .aboutTitle {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #0a0701;
+  font-weight: 600;
+}
+
+.aboutContainer .aboutWrapper {
+  margin: 0.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.aboutContainer .aboutWrapper .card {
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  border: solid 1px rgba(112, 112, 112, 0.51);
+  padding: 0.5rem 0;
+}
+
+.aboutContainer .aboutWrapper .card .cardImg {
+  text-align: center;
+}
+
+.aboutContainer .aboutWrapper .card .cardImg img {
+  width: 6rem;
+}
+
+.aboutContainer .aboutWrapper .card .cardText {
+  width: 100%;
+  text-align: center;
+}
+
+.aboutContainer .aboutWrapper .card .cardText h1 {
+  margin: 0.5rem 0.2rem;
+  font-size: 0.8rem;
+}
+
+.aboutContainer .aboutWrapper .card .social {
+  text-align: center;
+}
+
+.aboutContainer .aboutWrapper .card .social img {
+  max-width: 5rem;
+}
+
+@media (max-width: 800px) {
+  .aboutContainer .aboutWrapper .card {
+    width: 9rem;
+  }
+  .aboutContainer .aboutWrapper .card .cardImg img {
+    width: 5rem;
+  }
+  .aboutContainer .aboutWrapper .card .cardText h1 {
+    font-size: 0.7rem;
+  }
+  .aboutContainer .aboutWrapper .card .social img {
+    max-width: 4rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */
