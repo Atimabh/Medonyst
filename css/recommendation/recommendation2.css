@@ -187,17 +187,15 @@ body {
 }
 
 .container .cards .cardChild .medicineWrapper .medicine {
-  font-size: 0.8rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  text-align: left;
+  text-align: center;
 }
 
 .container .cards .cardChild .medicineWrapper .medicine h1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0.8rem 0;
-  margin-left: 1rem;
 }
 
 .container .cards .cardChild .medicineWrapper .medicine ul {

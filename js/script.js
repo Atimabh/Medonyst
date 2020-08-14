@@ -1,79 +1,88 @@
 //recommendation input
-document.getElementById("fever").addEventListener("click", () => {
+document.getElementById("pain").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
   let val3 = document.querySelector("#symp3").value;
-  if (val1 === "" && val1 != "Fever" && val2 != "Fever" && val3 != "Fever") {
-    document.querySelector("#symp1").value = "Fever";
-  } else if (val2 === "" && val1 != "Fever" && val3 != "Fever") {
-    document.querySelector("#symp2").value = "Fever";
-  } else if (val1 != "Fever" && val2 != "Fever") {
-    document.querySelector("#symp3").value = "Fever";
+  if (val1 === "" && val1 != "Pain" && val2 != "Pain" && val3 != "Pain") {
+    document.querySelector("#symp1").value = "Pain";
+  } else if (val2 === "" && val1 != "Pain" && val3 != "Pain") {
+    document.querySelector("#symp2").value = "Pain";
+  } else if (val1 != "Pain" && val2 != "Pain") {
+    document.querySelector("#symp3").value = "Pain";
   }
 });
 
-document.getElementById("vomit").addEventListener("click", () => {
+document.getElementById("sinusitis").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
   let val3 = document.querySelector("#symp3").value;
   if (
     val1 === "" &&
-    val1 != "Vomiting" &&
-    val2 != "Vomiting" &&
-    val3 != "Vomiting"
+    val1 != "Sinusitis" &&
+    val2 != "Sinusitis" &&
+    val3 != "Sinusitis"
   ) {
-    document.querySelector("#symp1").value = "Vomiting";
-  } else if (val2 === "" && val1 != "Vomiting" && val3 != "Vomiting") {
-    document.querySelector("#symp2").value = "Vomiting";
-  } else if (val1 != "Vomiting" && val2 != "Vomiting") {
-    document.querySelector("#symp3").value = "Vomiting";
+    document.querySelector("#symp1").value = "Sinusitis";
+  } else if (val2 === "" && val1 != "Sinusitis" && val3 != "Sinusitis") {
+    document.querySelector("#symp2").value = "Sinusitis";
+  } else if (val1 != "Sinusitis" && val2 != "Sinusitis") {
+    document.querySelector("#symp3").value = "Sinusitis";
   }
 });
 
-document.getElementById("rest").addEventListener("click", () => {
+document.getElementById("constipation").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
   let val3 = document.querySelector("#symp3").value;
   if (
     val1 === "" &&
-    val1 != "Restlessness" &&
-    val2 != "Restlessness" &&
-    val3 != "Restlessness"
+    val1 != "Constipation" &&
+    val2 != "Constipation" &&
+    val3 != "Constipation"
   ) {
-    document.querySelector("#symp1").value = "Restlessness";
-  } else if (val2 === "" && val1 != "Restlessness" && val3 != "Restlessness") {
-    document.querySelector("#symp2").value = "Restlessness";
-  } else if (val1 != "Restlessness" && val2 != "Restlessness") {
-    document.querySelector("#symp3").value = "Restlessness";
+    document.querySelector("#symp1").value = "Constipation";
+  } else if (val2 === "" && val1 != "Constipation" && val3 != "Constipation") {
+    document.querySelector("#symp2").value = "Constipation";
+  } else if (val1 != "Constipation" && val2 != "Constipation") {
+    document.querySelector("#symp3").value = "Constipation";
   }
 });
 document.getElementById("nausea").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
   let val3 = document.querySelector("#symp3").value;
-  if (val1 === "" && val1 != "Nausea" && val2 != "Nausea" && val3 != "Nausea") {
-    document.querySelector("#symp1").value = "Nausea";
-  } else if (val2 === "" && val1 != "Nausea" && val3 != "Nausea") {
-    document.querySelector("#symp2").value = "Nausea";
-  } else if (val1 != "Nausea" && val2 != "Nausea") {
-    document.querySelector("#symp3").value = "Nausea";
+  if (
+    val1 === "" &&
+    val1 != "Nausea/Vomiting" &&
+    val2 != "Nausea/Vomiting" &&
+    val3 != "Nausea/Vomiting"
+  ) {
+    document.querySelector("#symp1").value = "Nausea/Vomiting";
+  } else if (
+    val2 === "" &&
+    val1 != "Nausea/Vomiting" &&
+    val3 != "Nausea/Vomiting"
+  ) {
+    document.querySelector("#symp2").value = "Nausea/Vomiting";
+  } else if (val1 != "Nausea/Vomiting" && val2 != "Nausea/Vomiting") {
+    document.querySelector("#symp3").value = "Nausea/Vomiting/Vomiting";
   }
 });
-document.getElementById("nose").addEventListener("click", () => {
+document.getElementById("anxiety").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
   let val3 = document.querySelector("#symp3").value;
   if (
     val1 === "" &&
-    val1 != "Runny Nose" &&
-    val2 != "Runny Nose" &&
-    val3 != "Runny Nose"
+    val1 != "Anxiety" &&
+    val2 != "Anxiety" &&
+    val3 != "Anxiety"
   ) {
-    document.querySelector("#symp1").value = "Runny Nose";
-  } else if (val2 === "" && val1 != "Runny Nose" && val3 != "Runny Nose") {
-    document.querySelector("#symp2").value = "Runny Nose";
-  } else if (val1 != "Runny Nose" && val2 != "Runny Nose") {
-    document.querySelector("#symp3").value = "Runny Nose";
+    document.querySelector("#symp1").value = "Anxiety";
+  } else if (val2 === "" && val1 != "Anxiety" && val3 != "Anxiety") {
+    document.querySelector("#symp2").value = "Anxiety";
+  } else if (val1 != "Anxiety" && val2 != "Anxiety") {
+    document.querySelector("#symp3").value = "Anxiety";
   }
 });
 document.getElementById("cough").addEventListener("click", () => {
@@ -164,21 +173,21 @@ document.getElementById("conjuctivitis").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Conjunctivitis";
   }
 });
-document.getElementById("migrane").addEventListener("click", () => {
+document.getElementById("backpain").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
   let val3 = document.querySelector("#symp3").value;
   if (
     val1 === "" &&
-    val1 != "Migrane" &&
-    val2 != "Migrane" &&
-    val3 != "Migrane"
+    val1 != "Back Pain" &&
+    val2 != "Back Pain" &&
+    val3 != "Back Pain"
   ) {
-    document.querySelector("#symp1").value = "Migrane";
-  } else if (val2 === "" && val1 != "Migrane" && val3 != "Migrane") {
-    document.querySelector("#symp2").value = "Migrane";
-  } else if (val1 != "Migrane" && val2 != "Migrane") {
-    document.querySelector("#symp3").value = "Migrane";
+    document.querySelector("#symp1").value = "Back Pain";
+  } else if (val2 === "" && val1 != "Back Pain" && val3 != "Back Pain") {
+    document.querySelector("#symp2").value = "Back Pain";
+  } else if (val1 != "Back Pain" && val2 != "Back Pain") {
+    document.querySelector("#symp3").value = "Back Pain";
   }
 });
 document.getElementById("acne").addEventListener("click", () => {
