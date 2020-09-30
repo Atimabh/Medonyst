@@ -1,2 +1,2 @@
-# Medonist
-Medonist Web App
+# Medonyst
+Medonyst Web App
