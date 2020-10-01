@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonyst</title>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/recommendation/recommendation3.css">
+</head>
+
+<body>
+
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <h1>Menu</h1>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <!-- <a href="about.html">About Us</a> -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONYST</h1>
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <!-- Navigation Buttons -->
+    <div class="appNav">
+        <a href="recommendation.html">
+            <div class="appNavBtn medicine active">
+                <img src="images/medicine.png" alt="">
+                <h1>Medicines</h1>
+                <p>Get medicine <br> substitutes</p>
+            </div>
+        </a>
+        <a href="reminder.html">
+            <div class="appNavBtn reminder">
+                <img src="images/Reminder.png" alt="">
+                <h1>Reminders</h1>
+                <p>Set medicine <br> reminders</p>
+            </div>
+        </a>
+        <a href="record.html">
+            <div class="appNavBtn record">
+                <img src="images/Record.png" alt="">
+                <h1>Records</h1>
+                <p>Upload your <br> medical records</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Recommendation Result -->
+    <div class="container">
+        <div class="back">
+            <a href="recommendation2.html">
+                Back
+            </a>
+        </div>
+
+        <h1 id="title">Medicine Recommender</h1>
+
+        <div class="cards">
+            <div class="cardChild">
+                <div class="sympName">
+                    <h1>Corona</h1>
+                </div>
+                <div class="medicine">
+                    <ul>
+                        <li class="listTitle">DOCTOR RECOMMENDED</li>
+                        <li>Xenarelin</li>
+                        <li>Acetaposide</li>
+                        <li>Neonized</li>
+                        <li>Pitoramine</li>
+                        <li>Gemmara</li>
+                        <li>Abasonide</li>
+                        <li>Fenosys Fexovital</li>
+                        <li>Acycvax Lorazephilius</li>
+                    </ul>
+                    <ul>
+                        <li class="listTitle">PATIENT SATISFACTION</li>
+                        <li>Xenarelin</li>
+                        <li>Acetaposide</li>
+                        <li>Neonized</li>
+                        <li>Pitoramine</li>
+                        <li>Gemmara</li>
+                        <li>Abasonide</li>
+                        <li>Fenosys Fexovital</li>
+                        <li>Acycvax Lorazephilius</li>
+                    </ul>
+                </div>
+                <p id="note">NOTE: These medicines are alternative to the medicines showcased in the previous page and are recommended in order of patients' satisfaction with respect to using them.</p>
+                <a id="addreminder" href="reminder.html">Add Reminder</a>
+                <a href="recommendation2.html">
+                    <button class="seemore">Go Back</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+@import "../main/main.scss";
+.index-heading {
+    width: 90%;
+    margin: 0.8rem auto;
+    h1 {
+        color: #818181;
+    }
+}
+
+.swiper-container {
+    width: 90%;
+    background-color: rgba(51, 195, 216, 0.42) !important;
+    border-radius: 1rem;
+    .swiper-wrapper {
+        .swiper-slide {
+            color: #ffffff;
+            margin: 5rem 0;
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    }
+}
+
+.reminderWrapper {
+    width: 90%;
+    margin: 0 auto;
+    .yellow {
+        .pills {
+            background-color: #fabc41;
+        }
+        .check {
+            background-color: #fabc41;
+            opacity: 0.67;
+        }
+    }
+    .brown {
+        .pills {
+            background-color: #e4865c;
+        }
+        .check {
+            background-color: #e4865c;
+            opacity: 0.67;
+        }
+    }
+    .blue {
+        .pills {
+            background-color: #1cbed6;
+        }
+        .check {
+            background-color: #1cbed6;
+            opacity: 0.67;
+        }
+    }
+    .reminder {
+        margin: 0.8rem auto;
+        border-radius: 0.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // padding: 1rem 0;
+        box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px rgba(112, 112, 112, 0.09);
+        .pills {
+            position: relative;
+            left: -1rem;
+            border-radius: 0.5rem;
+            margin: 0.5rem 0;
+            img {
+                width: 2.5rem;
+                margin: 0.5rem 0.5rem;
+            }
+        }
+        .medicine {
+            margin: auto 0;
+            height: fit-content;
+            h1 {
+                color: #707070;
+                font-size: 1rem;
+            }
+            h2 {
+                display: inline-block;
+                color: #fabc41;
+            }
+            #evening {
+                margin-left: 0.5rem;
+            }
+        }
+        .check {
+            // padding: 1rem 1rem;
+            display: flex;
+            border-bottom-right-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            img {
+                margin: auto 0.5rem;
+            }
+        }
+    }
+}
+
+.checked {
+    color: #000000 !important;
+    text-decoration-line: line-through;
+}

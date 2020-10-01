@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonyst</title>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/login/login.css">
+</head>
+
+<body>
+
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <h1>Menu</h1>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <!-- <a href="about.html">About Us</a> -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONYST</h1>
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="loginContainer">
+        <h1 id="loginTitle">Log In</h1>
+        <div class="login">
+            <form action="#">
+                <input type="text" placeholder="Username" name="uname" required>
+                <input type="password" placeholder="Password" name="psw" required>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+        <hr>
+        <h1 id="loginTitle">Sign Up</h1>
+        <div class="signup">
+            <form action="#">
+                <input type="text" placeholder="Email" name="uname" required>
+                <input type="password" placeholder="Password" name="psw" required>
+                <input type="password" placeholder="Confirm Password" name="psw" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>
