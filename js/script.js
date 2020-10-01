@@ -68,6 +68,7 @@ document.getElementById("nausea").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Nausea/Vomiting/Vomiting";
   }
 });
+//click event for anxiety
 document.getElementById("anxiety").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
@@ -85,6 +86,7 @@ document.getElementById("anxiety").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Anxiety";
   }
 });
+//click event for cough
 document.getElementById("cough").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
@@ -97,6 +99,7 @@ document.getElementById("cough").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Cough";
   }
 });
+//click event for headache
 document.getElementById("headache").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
@@ -114,6 +117,7 @@ document.getElementById("headache").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Headache";
   }
 });
+//click event for birth
 document.getElementById("birth").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
@@ -135,6 +139,7 @@ document.getElementById("birth").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Birth Control";
   }
 });
+//click event for insomnia
 document.getElementById("insomnia").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
@@ -152,6 +157,7 @@ document.getElementById("insomnia").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Insomnia";
   }
 });
+//click event for conjuctivitis
 document.getElementById("conjuctivitis").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
@@ -173,6 +179,7 @@ document.getElementById("conjuctivitis").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Conjunctivitis";
   }
 });
+//click event for backpain
 document.getElementById("backpain").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
@@ -190,6 +197,7 @@ document.getElementById("backpain").addEventListener("click", () => {
     document.querySelector("#symp3").value = "Back Pain";
   }
 });
+//click event for ance
 document.getElementById("acne").addEventListener("click", () => {
   let val1 = document.querySelector("#symp1").value;
   let val2 = document.querySelector("#symp2").value;
