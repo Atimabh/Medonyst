@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonyst</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/recommendation/recommendation.css">
+</head>
+
+<body>
+
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <h1>Menu</h1>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <!-- <a href="about.html">About Us</a> -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONYST</h1>
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <!-- Navigation Buttons -->
+    <div class="appNav">
+        <a href="recommendation.html">
+            <div class="appNavBtn medicine active">
+                <img src="images/medicine.png" alt="">
+                <h1>Medicines</h1>
+                <p>Get medicine <br> substitutes</p>
+            </div>
+        </a>
+        <a href="reminder.html">
+            <div class="appNavBtn reminder">
+                <img src="images/Reminder.png" alt="">
+                <h1>Reminders</h1>
+                <p>Set medicine <br> reminders</p>
+            </div>
+        </a>
+        <a href="record.html">
+            <div class="appNavBtn record">
+                <img src="images/Record.png" alt="">
+                <h1>Records</h1>
+                <p>Upload your <br> medical records</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Medicine Input -->
+    <div class="container">
+        <div class="back">
+            <a href="#">
+                Back
+            </a>
+        </div>
+
+        <h1>Medicine Recommender</h1>
+
+        <input class="sympInput" id="symp1" type="text" placeholder="Enter symptom 1">
+        <input class="sympInput" id="symp2" type="text" placeholder="Enter symptom 2">
+        <input class="sympInput" id="symp3" type="text" placeholder="Enter symptom 3">
+
+
+        <p>Select from common symptoms you may have: (Optional)
+        </p>
+        <div class="symptoms">
+            <button style="background-color: #fabc41;" id="pain">Pain</button>
+            <button style="background-color: #e4865c" id="sinusitis">Sinusitis</button>
+            <button style="background-color: #2199be;" id="constipation">Constipation</button>
+            <button style="background-color: #707070;" id="nausea">Nausea/Vomiting</button>
+            <button style="background-color: #fabc41;" id="anxiety">Anxiety</button>
+            <button style="background-color: #e4865c;" id="cough">Cough</button>
+            <button style="background-color: #2199be;" id="headache">Headache</button>
+            <button style="background-color: #707070;" id="birth">Birth Control</button>
+            <button style="background-color: #2199be;" id="insomnia">Insomnia</button>
+            <button style="background-color: #fabc41;" id="conjuctivitis">Conjunctivitis</button>
+            <button style="background-color: #e4865c;" id="backpain">Back Pain</button>
+            <button style="background-color: #707070;" id="acne">Acne</button>
+        </div>
+        <div class="find">
+            <a href="recommendation2.html">
+                <button>Find Medicine</button>
+            </a>
+        </div>
+        <p id="disc">* Please note that the medicines shown to you are on basis of the symptoms entered by you.
+        </p>
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

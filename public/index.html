@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonyst</title>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <h1>Menu</h1>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <!-- <a href="about.html">About Us</a> -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONYST</h1>
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <!-- Navigation Buttons -->
+    <div class="appNav">
+        <a href="recommendation.html">
+            <div class="appNavBtn medicine">
+                <img src="images/medicine.png" alt="">
+                <h1>Medicines</h1>
+                <p>Get medicine <br> substitutes</p>
+            </div>
+        </a>
+        <a href="reminder.html">
+            <div class="appNavBtn reminder">
+                <img src="images/Reminder.png" alt="">
+                <h1>Reminders</h1>
+                <p>Set medicine <br> reminders</p>
+            </div>
+        </a>
+        <a href="record.html">
+            <div class="appNavBtn record">
+                <img src="images/Record.png" alt="">
+                <h1>Records</h1>
+                <p>Upload your <br> medical records</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="index-heading">
+        <h1>Hello User!</h1>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="index-heading">
+        <h1>Upcoming Reminders</h1>
+    </div>
+
+    <!-- Reminders -->
+    <div class="reminderWrapper">
+        <div class="reminder yellow">
+            <div class="pills">
+                <img src="images/pills.png" alt="">
+            </div>
+            <div class="medicine">
+                <h1>Hydrocodone (10 mg)</h1>
+                <h2 class="checked" id="morning">10 A.M.</h2>
+                <h2 id="evening">10 P.M.</h2>
+            </div>
+            <div class="check">
+                <img src="images/check.svg" alt="">
+            </div>
+        </div>
+        <div class="reminder brown">
+            <div class="pills">
+                <img src="images/pills.png" alt="">
+            </div>
+            <div class="medicine">
+                <h1>Hydrocodone (10 mg)</h1>
+                <h2 class="checked" id="morning">10 A.M.</h2>
+                <h2 id="evening">10 P.M.</h2>
+            </div>
+            <div class="check">
+                <img src="images/check.svg" alt="">
+            </div>
+        </div>
+        <div class="reminder blue">
+            <div class="pills">
+                <img src="images/pills.png" alt="">
+            </div>
+            <div class="medicine">
+                <h1>Hydrocodone (10 mg)</h1>
+                <h2 class="checked" id="morning">10 A.M.</h2>
+                <h2 id="evening">10 P.M.</h2>
+            </div>
+            <div class="check">
+                <img src="images/check.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/navbar.js"></script>
+    <script src="js/index/slider.js"></script>
+</body>
+
+</html>

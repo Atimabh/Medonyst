@@ -1,0 +1,232 @@
+/* The Modal (background) */
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+::-moz-placeholder {
+    color: #ffffff;
+}
+
+::-ms-placeholder {
+    color: #ffffff;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1rem 0;
+    border: 1px solid #888;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    font-size: 1rem;
+    padding: 2px 16px;
+    color: #707070;
+    margin: 1rem 0;
+}
+
+.modalTimeWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.modalTime {
+    background-color: #33c3d8;
+    color: #ffffff;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.modalTime h1 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.timeSelect {
+    background-color: #ffffff;
+    color: #33c3d8;
+    border: 2px solid #33c3d8;
+}
+
+input {
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #003e47;
+    color: #ffffff;
+    outline: none;
+}
+
+.custom-select {
+    position: relative;
+    font-weight: 600;
+    margin: 0.5rem auto;
+    font-size: 0.8rem;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    border-radius: 1rem;
+    background-color: #003e47;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/*style items (options):*/
+
+.select-items {
+    position: absolute;
+    background-color: #003e47;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 1rem;
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#modalAdd {
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: #fabc41;
+    color: #ffffff;
+    margin: 0.5rem;
+    outline: none;
+}

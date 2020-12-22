@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  font-size: 62.5%;
+}
+
+.appNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appNav .appNavBtn {
+  min-width: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.appNav .appNavBtn img {
+  width: 3rem;
+}
+
+.appNav .appNavBtn h1 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0.5rem;
+  color: #ffffff;
+}
+
+.appNav .appNavBtn p {
+  font-size: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #514f4f;
+}
+
+.appNav .medicine {
+  background-color: #80deea;
+}
+
+.appNav .reminder {
+  background-color: #f8c45b;
+}
+
+.appNav .record {
+  background-color: #80deea;
+}
+
+.active {
+  border: solid 4px #80deea !important;
+  background-color: #ffffff !important;
+}
+
+.active h1 {
+  color: #707070 !important;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  width: 95%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 16px;
+  border: solid 4px #c3eef4;
+  background-color: rgba(195, 238, 244, 0.36);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.container .back {
+  margin: 0.5rem 0.5rem;
+}
+
+.container .back a {
+  font-family: SegoeUI;
+  font-size: 1rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.07;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+
+.container #title {
+  margin: 0 auto;
+  font-family: OpenSans;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: #626262;
+}
+
+.container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  margin: 0.5rem auto;
+}
+
+.container .cards .cardChild {
+  margin: 1rem 0;
+  text-align: left;
+  border-radius: 1rem;
+  background-color: #73c4d6;
+  color: #ffffff;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.16);
+}
+
+.container .cards .cardChild .medicine {
+  font-size: 0.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 1rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .cards .cardChild .medicine h1 {
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+}
+
+.container .cards .cardChild .medicine ul {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.container .cards .cardChild .medicine ul li {
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.container .cards .cardChild .medicine ul .listTitle {
+  color: #666666;
+  font-weight: bolder;
+}
+
+.container .cards .cardChild #note {
+  width: 95%;
+  font-size: 1rem;
+  margin: 2rem auto;
+}
+
+.container .cards .cardChild .sympName {
+  width: 100%;
+  background-color: #2199be;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.5rem 0;
+}
+
+.container .cards .cardChild .sympName h1 {
+  font-size: 1.5rem;
+}
+
+.container .cards .cardChild .seemore {
+  border: none;
+  font-size: 1rem;
+  background-color: #2199be;
+  color: #ffffff;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.container .cards .cardChild #addreminder {
+  display: block;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.container .disc {
+  width: 98%;
+  margin: 1rem auto;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=recommendation3.css.map */

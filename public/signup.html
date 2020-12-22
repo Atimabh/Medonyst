@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonyst</title>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/signup/signup.css">
+</head>
+
+<body>
+
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <h1>Menu</h1>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <!-- <a href="about.html">About Us</a> -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONYST</h1>
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="loginContainer">
+        <h1 id="loginTitle">Sign Up</h1>
+        <div class="fullsignup">
+            <form action="#">
+                <h1>User Details</h1>
+                <p>Please enter your details for the <br> following:
+                </p>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Username" name="uname" required>
+                <div class="age">
+                    <input type="text" placeholder="Blood Group" name="blood" required>
+                    <input type="text" placeholder="DD/MM/YY" name="uname" required>
+                </div>
+                <div class="sex">
+                    <input type="text" placeholder="Sex (M/F)" name="uname" required>
+                    <input type="text" placeholder="Weight" name="uname" required>
+                </div>
+                <textarea name="all" id="allergies" cols="30" rows="10" placeholder="Enter any allergies"></textarea>
+                <textarea name="meds" id="meds" cols="30" rows="10" placeholder="Enter past medication"></textarea>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonyst</title>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/record/record.css">
+</head>
+
+<body>
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <h1>Menu</h1>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <!-- <a href="about.html">About Us</a> -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONYST</h1>
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <!-- Navigation Buttons -->
+    <div class="appNav">
+        <a href="recommendation.html">
+            <div class="appNavBtn medicine">
+                <img src="images/medicine.png" alt="">
+                <h1>Medicines</h1>
+                <p>Get medicine <br> substitutes</p>
+            </div>
+        </a>
+        <a href="reminder.html">
+            <div class="appNavBtn reminder">
+                <img src="images/Reminder.png" alt="">
+                <h1>Reminders</h1>
+                <p>Set medicine <br> reminders</p>
+            </div>
+        </a>
+        <a href="record.html">
+            <div class="appNavBtn record active">
+                <img src="images/Record.png" alt="">
+                <h1>Records</h1>
+                <p>Upload your <br> medical records</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Records Section -->
+    <div class="container">
+        <div class="back">
+            <a href="index.html">
+                <h1>Back</h1>
+            </a>
+        </div>
+        <div class="title">
+            <h1>Patient History</h1>
+            <p>Please enter your details for the following:
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="Patient ID" id="id">
+            <div class="subForm">
+                <input type="text" placeholder="Age (Eg. 21)" id="age">
+                <input type="text" placeholder="DD/MM/YY" id="dob">
+            </div>
+            <input type="text" placeholder="Sex (M/F)" id="sex">
+            <textarea name="symptom" id="symp" cols="30" rows="10" placeholder="Enter recommended drugs"></textarea>
+            <textarea name="prescribed" id="pres" cols="30" rows="10" placeholder="Enter consumption date"></textarea>
+            <button id="save">Save Details</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

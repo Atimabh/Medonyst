@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medonyst</title>
+    <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/doctor/doctor.css">
+</head>
+
+<body>
+
+    <!-- Sidepanel -->
+    <div id="mySidepanel" class="sidepanel">
+        <div class="blue">
+            <h1>Menu</h1>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="recommendation.html">Medicines</a>
+        <a href="reminder.html">Reminders</a>
+        <a href="record.html">Records</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="#">About Us</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">
+            <input id="ham" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="index.html" id="logo">
+            <h1>MEDONYST</h1>
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/bell.svg" alt="">
+        </a>
+        <a class="navLink" href="#">
+            <img src="images/user.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="doctorContainer">
+        <div class="back">
+            <a href="index.html">
+                <h1>BACK</h1>
+            </a>
+        </div>
+        <div class="doctorWrapper">
+            <div class="doc">
+                <div class="docImg"><img src="images/male.png" alt=""></div>
+                <div class="docText">
+                    <h1>Dr. Ravi Kumar</h1>
+                    <h1>Medicine Specialist</h1>
+                </div>
+            </div>
+            <div class="doc">
+                <div class="docImg"><img src="images/female.png" alt=""></div>
+                <div class="docText">
+                    <h1>Dr. Raveena Kumar</h1>
+                    <h1>Family Physician</h1>
+                </div>
+            </div>
+        </div>
+        <div class="doctorAbout">
+            <p class="info">Dr. Ravi Kumar and Dr. Raveena Kumar are resident doctors at MEDONYST, and are our in house Doctors.
+            </p>
+            <p class="contact">In case of emergencies, you can contact his office for support at:
+            </p>
+            <p class="number">+91-9872034789</p>
+        </div>
+    </div>
+
+
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>
